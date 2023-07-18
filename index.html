@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <title>Przykłady dostępnych i niedostępnych komponentów</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="functions.js"></script>
+</head>
+<h1>Przykłady dostępnych i niedostępnych rozwiązań</h1>
+<h2>Dostępny komponent do dodawania filtrów</h2>
+<div role="gorup" aria-labelledby="group_label">
+      <span id="group_label">Etykieta grupy</span>
+      <div class="chips_input">
+      <div id="chip_container">
+       <div class="chip" id="chip-1">
+      <span>Etykieta pierwszego filtra<span>
+      <button aria-label="Usuń etykietę pierwszego filtra" onclick="removeChip(1)">X</button>
+      </div>
+      <div class="chip" id="chip-2">
+      <span>Etykieta drugiego filtra<span>
+      <button aria-label="Usuń etykietę drugiego filtra" onclick="removeChip(2)">X</button>
+      </div>
+        </div>
+        <div class="label_placeholder">
+      <label for="new-filter" class="placeholder" id="placeholder">Dodaj filtr</label>
+        <input type="text" name="new-filter" id="new-filter" class="relative_input" onclick="dodajChip()">
+        <div id="info_container" aria-live="polite"></div>
+          </div>
+      </div>
+</div>
+
+<h2>Dostępny komponent aktywnej tabeli</h2>
+
+
+     
+<h2>🚧 WIP 🚧</h2>
+<div role="gorup" aria-labelledby="group_label">
+      <span id="gorup_label">Group label</span>
+      <div class="chips_input">
+      <div id="chip_container" aria-live="polite">
+       <div class="chip" id="chip-1">
+      <span>Chip label 1<span>
+      <button aria-label="Close Chip label 1" onclick="removeChip(1)">X</button>
+      </div>
+      <div class="chip" id="chip-2">
+      <span>Chip label 2<span>
+      <button aria-label="Close Chip label 2" onclick="removeChip(2)">X</button>
+      </div>
+        </div>
+      <input type="text" id="new-filter" aria-label="Add filter" placeholder="Add filter" onclick="addChip()">
+      </div>
+</div>
+       
+<div role="gorup" aria-labelledby="group_label-1" class="group">
+      <span id="gorup_label-1">Group with "disabled" atttribute</span>
+      <div class="chips_input">
+      <div class="chip">
+      <span>Chip label 1<span>
+      <button disabled aria-label="Close Chip label 1">X</button>
+      </div>
+      <div class="chip" id="chip-2">
+      <span>Chip label 2<span>
+      <button disabled aria-label="Close Chip label 2" onclick="removeChip()">X</button>
+      </div>
+      <input disabled type="text" aria-label="Add filter" placeholder="Add filter">
+      </div>
+</div>
+        
+<div role="gorup" aria-labelledby="group_label-2" class="group">
+      <span id="gorup_label-2">Group with "aria-disabled" and tabbable buttons</span>
+      <div class="chips_input">
+      <div class="chip">
+      <span>Chip label 1<span>
+      <button aria-disabled="true" aria-label="Close Chip label 1">X</button>
+      </div>
+      <div class="chip" id="chip-2">
+      <span>Chip label 2<span>
+      <button aria-disabled="true" aria-label="Close Chip label 2" onclick="removeChip()">X</button>
+      </div>
+      <input aria-disabled="true" type="text" aria-label="Add filter" placeholder="Add filter">
+      </div>
+</div>
+        
+<div role="gorup" aria-labelledby="group_label-3" class="group">
+      <span id="gorup_label-3">Group with "aria-disabled" attribute and non-tabbable buttons</span>
+      <div class="chips_input">
+      <div class="chip">
+      <span>Chip label 1<span>
+      <button tabindex="-1" aria-disabled="true" aria-label="Close Chip label 1">X</button>
+      </div>
+      <div class="chip" id="chip-2">
+      <span>Chip label 2<span>
+      <button tabindex="-1" aria-disabled="true" aria-label="Close Chip label 2" onclick="removeChip()">X</button>
+      </div>
+      <input tabindex="-1" aria-disabled="true" type="text" aria-label="Add filter" placeholder="Add filter">
+      </div>
+</div>

@@ -1,0 +1,58 @@
+#group_label{
+  position:relative;
+  top:3px;
+left:30px;
+background:white;}
+#group{
+  padding-top:20px;}
+.chips_input{
+  padding:15px;
+  max-width:750px;
+  border-style:solid;
+  border-color:black;
+  border-radius:0.5rem;
+  border-width:1px;
+  border-radius:5px;
+}  
+#chip_container{
+  display:inline;
+}
+.chip{
+  display:inline;
+  margin:2px;
+  padding:3px;
+  max-width:125px;
+  border-style:solid;
+  border-color:black;
+  border-radius:0.5rem;
+  border-width:1px;
+  border-radius:5px;
+}
+input{border-style:none;}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.label_placeholder {
+  display:inline-block;
+  position: relative;
+}
+.placeholder { 
+    position: absolute;
+    top: 8%;
+    left: 5px;
+    color: #757575;
+}
+.placeholder:has(+.relative_input:focus){ 
+    position: absolute;
+    top: -85%;
+    left: 5px;
+    color: #000000;
+    background:white;
+}
