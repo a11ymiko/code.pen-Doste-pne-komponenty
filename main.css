@@ -86,8 +86,13 @@ tr > th{
   text-align: center;
   vertical-align: middle;
 }
+.hover-tooltip{
+  display:inline;
+}
 .tooltip-info{
   display:none;
+  -webkit-transition: all 3s;
+  transition: all 3s;
 }
 #chip-1-btn-dis:focus + span.tooltip-info{
   display:inline;
@@ -96,5 +101,8 @@ tr > th{
   display:inline;
 }
 #input-action-dis:focus + span.tooltip-info{
+  display:inline;
+}
+div.hover-tooltip:hover > span.tooltip-info{
   display:inline;
 }

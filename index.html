@@ -132,13 +132,17 @@
         <div class="chips_input">
           <div class="chip" id="chip-1-dis">
             <span>Chip label 1<span>
-            <button id="chip-1-btn-dis" aria-describedby="btn-1-tooltip" aria-disabled="true" aria-label="Close Chip label 1">X</button>
-            <span class="tooltip-info" id="btn-1-tooltip">This element is disabled due to...</span>
+            <div class="hover-tooltip">
+              <button id="chip-1-btn-dis" aria-describedby="btn-1-tooltip" aria-disabled="true" aria-label="Close Chip label 1">X</button>
+              <span class="tooltip-info" id="btn-1-tooltip">This element is disabled due to...</span>
+            </div>
           </div>
           <div class="chip" id="chip-2-dis">
             <span>Chip label 2<span>
-            <button id="chip-2-btn-dis" aria-describedby="btn-2-tooltip" aria-disabled="true" aria-label="Close Chip label 2" onclick="removeChip('chip-2')">X</button>
-            <span class="tooltip-info" id="btn-2-tooltip">This element is disabled due to...</span>
+            <div class="hover-tooltip">
+              <button id="chip-2-btn-dis" aria-describedby="btn-2-tooltip" aria-disabled="true" aria-label="Close Chip label 2" onclick="removeChip('chip-2')">X</button>
+              <span class="tooltip-info" id="btn-2-tooltip">This element is disabled due to...</span>
+            </div>
           </div>
           <div id="input-dis">
             <label class="sr-only" id="input-label">Add filter</label>
